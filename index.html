@@ -1,43 +1,447 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="utf-8">
-        <meta name="description" content="Citoyens, si nos politiques ne font pas le job, c'est à nous de le faire.">
-        <meta name="keywords" content="france,politique,élection,candidat,programme,citoyen,anonyme">
-        <meta name="author" content="Citoyen Anonyme">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Citoyens, si nos politiques ne font pas le job, c'est à nous de le faire.">
+    <meta name="keywords" content="france,politique,élection,candidat,programme,citoyen,anonyme">
+    <meta name="author" content="Citoyen Anonyme">
 
-        <title>Le Citoyen Anonyme</title>
+    <title>Le Citoyen Anonyme</title>
 
-        <style>
-            html, body {
-                height: 100%;
-                margin: 0;
-                padding: 0;
-                width: 100%;
-                background-color: #303030;
-                color: #EEE;
-                font-family: Arial, Helvetica, sans-serif;
-            }
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-            body {
-                display: table;
-            }
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
 
-            .centered {
-                text-align: center;
-                display: table-cell;
-                vertical-align: middle;
-            }
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
-            h1 {
-                font-family: Georgia, serif;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="centered">
-            <h1>le Citoyen Anonyme</h1>
-            <h3>En construction ...</h3>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link href="https://fonts.googleapis.com/css?family=Gentium+Basic" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <a href="#top" onclick=$("#menu-close").click();>Le Citoyen Anonyme</a>
+            </li>
+            <li>
+                <a href="#top" onclick=$("#menu-close").click();>Accueil</a>
+            </li>
+            <li>
+                <a href="#constat" onclick=$("#menu-close").click();>Constat</a>
+            </li>
+            <li>
+                <a href="#candidature" onclick=$("#menu-close").click();>Candidature</a>
+            </li>
+            <li>
+                <a href="#soutenir" onclick=$("#menu-close").click();>Soutenir</a>
+            </li>
+            <li>
+                <a href="#contact" onclick=$("#menu-close").click();>Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header id="top" class="header">
+        <div class="text-vertical-center">
+            <img class="avatar" src="img/alembert_400_2.png" alt="Avatar du Citoyen Anonyme" />
+            <h1 class="bigtitle"><small>le</small> Citoyen Anonyme</h1></span>
+            <h3>Un citoyen comme les autres.</h3>
+            <br>
+            <a href="#constat" class="btn btn-dark btn-lg">Make le Baguette Great Again !</a>
         </div>
-    </body>
+    </header>
+
+    <!-- Constat -->
+    <section id="constat" class="constat">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <p>Selon le sondage Elabe pour Atlantico <a href="http://elabe.fr/1353-2/">http://elabe.fr/1353-2/</a></p>
+                    <h2>74% d'entre nous n'ont plus confiance en eux</h2>
+                    <p class="lead">Ce n'est pas une surprise, nous le savons déjà.</p>
+                    <h2>78% d'entre nous voteraient pour un simple citoyen</h2>
+                    <p class="lead">Alors qu'attendons-nous ? Citoyens, presentez-vous candidat !</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- Callout -->
+    <aside class="callout">
+        <div class="text-vertical-center greying">
+            <h1>Citoyens, sortons-nous les doigts !</h1>
+            <h2>Si nos politiques ne font plus le job, c'est à nous de le faire.</h2>
+        </div>
+    </aside>
+
+    <section class="constat">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-left">
+                    <h3>La politique ne se renouvellera pas d'elle même.</h3>
+                    <h3>Les plus motivés d'entre nous doivent se présenter !</h3>
+                    <p class="lead">Aujourd'hui avec internet, partager des idées c'est très simple. Mais surtout, un bon programme n'a pas besoin d'être compliqué. Alors partageons.</p>
+                    <h3>Voici donc notre contribution ...</h3>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+    </section>
+
+    <!-- Candidature -->
+    <section id="candidature" class="candidature bg-primary">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <h1>Candidature</h1>
+                    <h3>Faites comme nous ou rejoignez-nous !</h3>
+                    <hr class="small">
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+            <p class="lead">Ce n'est qu'un programme de citoyen. Mais à travers ce programme il y a l'envie d'être ambitieux, de croire, de vouloir et de faire ! :)</p>
+            <h1>Le Mandat</h1>
+            <div class="statement statement-success">
+				<div class="statement-heading clickable statement-collapsed">
+					<h3 class="statement-title">
+                        Pas de perfection (mais une respiration)
+                        <small class="pull-right"><i class="glyphicon glyphicon-chevron-down"></i></small></h3>
+				</div>
+				<div class="statement-body lead collapse">
+                    Le mandat promis ne sera probablement par parfait. Mais ça ne fait rien. Nous avons une vision pour la France et la volonté d'offrir une respiration politique.
+                </div>
+		    </div>
+
+            <div class="statement statement-success">
+				<div class="statement-heading clickable statement-collapsed">
+					<h3 class="statement-title">
+                        Consultations citoyennes
+                        <small class="pull-right"><i class="glyphicon glyphicon-chevron-down"></i></small></h3>
+				</div>
+				<p class="statement-body lead collapse">
+                    Nous aurons besoin de vous. Le sondage va tourner à plein régime. Nous mettrons en place des moyens modernes de communication. Vous (nous) allons exister !
+                </p>
+		    </div>
+
+            <div class="statement statement-success">
+				<div class="statement-heading clickable statement-collapsed">
+					<h3 class="statement-title">
+                        Mise à contribution des talents
+                        <small class="pull-right"><i class="glyphicon glyphicon-chevron-down"></i></small></h3>
+				</div>
+				<div class="statement-body lead collapse">
+                    Nous comptons sur les professionnels et les gens d'expérience vers qui nous nous tournerons pour construire citoyennement des solutions. Car les citoyens savent ! Nous les citoyens sommes de tous les métiers et faisons la France. Celle qui fut Grande et qui l'est encore. : )
+                </div>
+		    </div>
+
+            <div class="statement statement-success">
+				<div class="statement-heading clickable statement-collapsed">
+					<h3 class="statement-title">
+                        Un programme qui s'adapte
+                        <small class="pull-right"><i class="glyphicon glyphicon-chevron-down"></i></small></h3>
+				</div>
+				<p class="statement-body lead collapse">
+                    Nous n'imposerons pas une vision minoritaire à la majorité. Donc nous ne promettons aucunement d'appliquer bêtement notre programme. Nous validerons auprès des citoyens ce que nous faisons.
+                </p>
+		    </div>
+
+            <div class="statement statement-success">
+				<div class="statement-heading clickable statement-collapsed">
+					<h3 class="statement-title">
+                        Vision de long terme
+                        <small class="pull-right"><i class="glyphicon glyphicon-chevron-down"></i></small></h3>
+				</div>
+				<p class="statement-body lead collapse">
+                    Nous préférons un programme interminable pour voir grand et loin qu'un programme de carriériste qui cherche à justifier pourquoi il faut l'élire à nouveau.
+                </p>
+		    </div>
+
+            <h3 class="quote">Mais surtout, honnêteté, transparence et échange. C'est pas compliqué, avec nous vous en aurez.</h3>
+
+            <h1>Le Programme <small>(en construction)</small></h1>
+            <p class="lead">
+                Le programme sera alimenté au fur et à mesure. Il fait des propositions concrètes et des analyses. Nous ne prétendons pas qu'il soit parfait, c'est un programme de citoyen.
+            </p>
+            <!-- <div class="statement statement-success">
+				<div class="statement-heading clickable statement-collapsed">
+					<h3 class="statement-title">
+                        
+                        <small class="pull-right"><i class="glyphicon glyphicon-chevron-down"></i></small></h3>
+				</div>
+				<div class="statement-body lead collapse">
+                </div>
+		    </div> -->
+            <h1>Le Candidat</h1>
+            <p class="lead">
+                Nous proposons un candidat, l'initiateur du projet Citoyen Anonyme. C'est donc son portrait que nous tirerons ici.
+            </p>
+            <div class="statement statement-success">
+				<div class="statement-heading clickable statement-collapsed">
+					<h3 class="statement-title">
+                        N'est issu ou affilié à aucun parti politique
+                        <small class="pull-right"><i class="glyphicon glyphicon-chevron-down"></i></small></h3>
+				</div>
+				<p class="statement-body lead collapse">
+                    Je suis frustré par nos partis politiques en opposition systématique pour leur quête personnel du pouvoir et leur volonté d'imposer trop souvent leur vision minoritaire. La France n'est pas divisible en une gauche et une droite sectaires. Elle ne sera jamais grande à travers la vision exclusive et étroite de l'un de ces bords politiques.
+                </p>
+		    </div>
+            <div class="statement statement-success">
+				<div class="statement-heading clickable statement-collapsed">
+					<h3 class="statement-title">
+                        Ne veux pas faire carrière
+                        <small class="pull-right"><i class="glyphicon glyphicon-chevron-down"></i></small></h3>
+				</div>
+				<p class="statement-body lead collapse">
+                    J'aime mon métier et souhaite le continuer. J'ai beaucoup d'idées que j'aimerai les concrétiser. J'ai autre chose à faire qu'une carrière en politique. Je ne participerais à rien d'autre que cette élection ou la prochaine. Pour le reste, oubliez-moi.
+                </p>
+		    </div>
+            <div class="statement statement-success">
+				<div class="statement-heading clickable statement-collapsed">
+					<h3 class="statement-title">
+                        Jeune ingénieur issu de la classe populaire
+                        <small class="pull-right"><i class="glyphicon glyphicon-chevron-down"></i></small></h3>
+				</div>
+				<p class="statement-body lead collapse">
+                    Je vais probablement défriser certains de nos dinosaures politiques qui ont tout vu tout compris de la vie. Je suis jeune et le revendique. Je suis issu d'une famille de la classe populaire, à cheval avec la classe moyenne. Je suis très heureux d'avoir réussi mes études et j'ai le sentiment de devoir beaucoup à mon pays. : )
+                </p>
+		    </div>
+            <div class="statement statement-success">
+				<div class="statement-heading clickable statement-collapsed">
+					<h3 class="statement-title">
+                        Amoureux du progrès et de la culture
+                        <small class="pull-right"><i class="glyphicon glyphicon-chevron-down"></i></small></h3>
+				</div>
+				<p class="statement-body lead collapse">
+                    Je regrette qu'on ne parle que trop peu de progrès ou de culture en politiques. C'est pourtant ce qui propulse les grandes nations. J'aurai à coeur de défendre une vision pour la France faites de ces ingrédients.
+                </p>
+		    </div>
+            <div class="statement statement-success">
+				<div class="statement-heading clickable statement-collapsed">
+					<h3 class="statement-title">
+                        Infiniment passioné et déterminé
+                        <small class="pull-right"><i class="glyphicon glyphicon-chevron-down"></i></small></h3>
+				</div>
+				<p class="statement-body lead collapse">
+                    S'il y a quelque chose qui me tient motivé, c'est bien ma passion dans tout ce que j'entreprend. Je me sens profondément humain. On me connait un sens élevé de la moral et du devoir. C'est pourquoi, sous la frustration, j'en suis à faire cette contribution citoyenne.
+                </p>
+		    </div>
+            <div class="statement statement-success">
+				<div class="statement-heading clickable statement-collapsed">
+					<h3 class="statement-title">
+                        Redevable devant les citoyens
+                        <small class="pull-right"><i class="glyphicon glyphicon-chevron-down"></i></small></h3>
+				</div>
+				<p class="statement-body lead collapse">
+                    Selon moi, l'état travail pour le citoyen. Obtenir du pouvoir ne fait qu'augmenter les devoirs et les responsabilités. Transparence, rigueur et communication. Le président doit être un arbitre de la volonté citoyenne et rendre compte sans relâche.
+                </p>
+		    </div>
+            <div class="statement statement-success">
+				<div class="statement-heading clickable statement-collapsed">
+					<h3 class="statement-title">
+                        Anonyme pour le moment
+                        <small class="pull-right"><i class="glyphicon glyphicon-chevron-down"></i></small></h3>
+				</div>
+				<p class="statement-body lead collapse">
+                    Anonyme pour deux raisons. Symbole des citoyens que nous sommes, fatigués par nos politiques. Pour la tranquilité professionnelle, si nous ne receuillons pas assez de soutien dans cette tentative. Bien sûr, l'anonymat sera levé une fois rassemblé un nombre raisonable de soutiens.
+                </p>
+		    </div>
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <section id="soutenir" class="soutenir">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-left">
+                    <h3>Encore une fois, si vous avez des idées, lancez-vous ! : )</h3>
+                    <h3>Mais si vous aimez ce que nous proposons, alors soutenez-nous.</h3>
+
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <aside class="call-to-action bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1>Soutenir</h1>
+                    <hr class="small">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+            <a href="#" class="btn btn-lg btn-light">Signer notre pétition de soutien : )</a>
+                </div>
+            </div>
+            <h3>Nous ne voulons pas de votre argent</h3>
+            <p class="lead">
+                Nous voulons d'abord un soutien concret par le moyen des signatures. Mais vous pouvez toutefois laisser à notre adresse une intention de don.
+            </p>
+            <h3>Les 500 signatures</h3>
+            <p class="lead">
+                Si vous aimez notre cause, parlez de nous à l'élu de votre commune. Si vous êtes un élu et que vous aimez notre cause, envoyez nous un e-mail.
+            </p>
+
+            <h3>Un mot à notre sujet</h3>
+            <p class="lead">
+                Nous sommes des amis, frustrés par la politique. Nous n'avons pas de moyens pour une campagne, mais nous aimons notre pays, sommes motivés et avons internet. : )
+            </p>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h3>La politique n'est pas désagréable,<br/>ce sont nos politiques qui l'ont rendu ainsi.</h3>
+                </div>
+            </div>
+        </div>
+    </aside>
+<!-- Le Citoyen Anonyme propose sa candidature à la Présidence de la République Française. Si au regard de son programme vous souhaitez le voir candidat aux prochaines élections, signez la pétition. -->
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h1>Contact</h1>
+                    <hr class="small">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h4><strong>Citoyen Anonyme</strong></h4>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:contact.citoyen.anonyme@gmail.com">contact.citoyen.anonyme@gmail.com</a>
+                        </li>
+                    </ul>
+                    <br>
+                    <ul class="list-inline">
+                        <li>
+                            <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/CitoyenAnonyme_"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                        </li>
+                    </ul>
+                    <hr class="small">
+                    <p class="text-muted">&copy; 2016 Citoyen Anonyme.<br/>Tous droits réservés.</p>
+                </div>
+            </div>
+        </div>
+        <a id="to-top" href="#top" class="btn btn-dark btn-lg"><i class="fa fa-chevron-up fa-fw fa-1x"></i></a>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    //#to-top button appears after scrolling
+    var fixed = false;
+    $(document).scroll(function() {
+        if ($(this).scrollTop() > 250) {
+            if (!fixed) {
+                fixed = true;
+                // $('#to-top').css({position:'fixed', display:'block'});
+                $('#to-top').show("slow", function() {
+                    $('#to-top').css({
+                        position: 'fixed',
+                        display: 'block'
+                    });
+                });
+            }
+        } else {
+            if (fixed) {
+                fixed = false;
+                $('#to-top').hide("slow", function() {
+                    $('#to-top').css({
+                        display: 'none'
+                    });
+                });
+            }
+        }
+    });
+    // Disable Google Maps scrolling
+    // See http://stackoverflow.com/a/25904582/1607849
+    // Disable scroll zooming and bind back the click event
+    var onMapMouseleaveHandler = function(event) {
+        var that = $(this);
+        that.on('click', onMapClickHandler);
+        that.off('mouseleave', onMapMouseleaveHandler);
+        that.find('iframe').css("pointer-events", "none");
+    }
+    var onMapClickHandler = function(event) {
+            var that = $(this);
+            // Disable the click handler until the user leaves the map area
+            that.off('click', onMapClickHandler);
+            // Enable scrolling zoom
+            that.find('iframe').css("pointer-events", "auto");
+            // Handle the mouse leave event
+            that.on('mouseleave', onMapMouseleaveHandler);
+        }
+        // Enable map zooming with mouse scroll when the user clicks the map
+    $('.map').on('click', onMapClickHandler);
+
+    $(document).on('click', '.statement-heading.clickable', function(e){
+        var $this = $(this);
+        if(!$this.hasClass('statement-collapsed')) {
+            $this.parents('.statement').find('.statement-body').slideUp();
+            $this.addClass('statement-collapsed');
+            $this.find('i').removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down');
+        } else {
+            $this.parents('.statement').find('.statement-body').slideDown();
+            $this.removeClass('statement-collapsed');
+            $this.find('i').removeClass('glyphicon-chevron-down').addClass('glyphicon-chevron-up');
+        }
+    })
+    </script>
+
+</body>
+
 </html>
