@@ -10,6 +10,13 @@ html,
 body {
     width: 100%;
     height: 100%;
+    /*background-color: rgb(200, 200, 200);*/
+}
+
+@media (min-width: 1200px) {
+    .container{
+        max-width: 970px;
+    }
 }
 
 body {
@@ -31,8 +38,74 @@ body {
     margin: 20px;
 }
 
+
+.nav > li {
+    float: none;
+    display: inline-block;
+    *display: inline;     /* for IE7*/
+    *zoom: 1;             /* for IE7*/
+}
+
+.nav li a,
+.nav li a:link,
+.nav li a:visited,
+.nav li a:hover,
+.nav li a:focus,
+.nav li a:active {
+	background-color: transparent;
+    color: white;
+}
+
+.submenu {
+	display: block;
+	text-align: center;
+    outline: none;
+}
+.submenu .nav li {
+	padding: 0 10px;
+}
+
+.submenu .nav li a {
+	color: #FFF;
+	opacity: 0.5;
+    text-decoration: none;
+    width: 220px;
+}
+
+.submenu .nav li.active a {
+	color: #FFF;
+	opacity: 1;
+    /*text-decoration: underline;*/
+    outline: none;
+}
+
+.submenu h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 2em;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+
+.text-center .submenu h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 2.5em;
+    font-weight: 700;
+    /*font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;*/
+
+    font-family: 'Gentium Basic', serif;
+    margin-bottom: 20px;
+}
+
 .statement-heading {
     cursor: pointer;
+}
+
+.statement-heading h3 small {
+    font-size: 0.5em;
+    vertical-align: middle;
+    margin-right: 20px;
 }
 
 .quote {
