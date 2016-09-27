@@ -27,6 +27,19 @@ body {
     font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
+p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.4;
+}
+
+@media (min-width: 768px) {
+    p {
+        font-size: 21px;
+    }
+}
+
 .frenchflag {
     width: 24px;
     height: 16px;
@@ -52,6 +65,7 @@ body {
 
 .nav > li {
     display: inline-block;
+    width: 30%;
     *display: inline;     /* for IE7*/
     *zoom: 1;             /* for IE7*/
 }
@@ -70,16 +84,34 @@ body {
 	display: block;
 	text-align: center;
     outline: none;
+    margin-top: 40px;
 }
 .submenu .nav li {
-	padding: 0 10px;
+	padding: 0 10px 3px 10px;
+    font-size: 1.4em;
+}
+
+.submenu .nav li.select-red {
+    border-bottom: 6px #EC1920 solid;
+}
+
+.submenu .nav li.select-blue {
+    border-bottom: 6px #051440 solid;
+}
+
+.submenu .nav li.select-white {
+    border-bottom: 6px white solid;
 }
 
 .submenu .nav li a {
 	color: #FFF;
 	opacity: 0.5;
     text-decoration: none;
-    width: 220px;
+}
+
+.submenu .nav li.active {
+    border-bottom-width: 9px;
+    padding-bottom: 0;
 }
 
 .submenu .nav li.active a {
@@ -89,7 +121,7 @@ body {
     outline: none;
 }
 
-.submenu h1 {
+.submenu li {
     margin: 0;
     padding: 0;
     font-size: 2em;
@@ -97,15 +129,17 @@ body {
     font-family: sans-serif;
 }
 
-.text-center .submenu h1 {
+.text-center .submenu li {
     margin: 0;
-    padding: 0;
+    /*padding: 0;*/
     font-size: 2.5em;
     font-weight: 700;
-    /*font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;*/
-
     font-family: 'Gentium Basic', serif;
-    margin-bottom: 20px;
+}
+
+.text-center .submenu li small {
+    font-size: 56%;
+    display: block;
 }
 
 .statement-heading {
@@ -316,12 +350,24 @@ hr.small {
 /* Candidature */
 
 .candidature {
-    padding: 50px 0;
+    padding: 50px 0 0 0;
 }
 
 .candidature a {
     color: white;
     text-decoration: underline;
+}
+
+.candidature-details {
+	background-color: white;
+	color: black;
+    padding: 20px 0 50px 0;
+    box-shadow: inset 10px 0px 30px 0px lightgray,
+                inset -10px 0px 30px 0px lightgray;
+}
+
+.candidature-details h3 small {
+    color: black;
 }
 
 .service-item {
@@ -346,6 +392,7 @@ hr.small {
 
 .soutenir {
     padding: 50px 0;
+    /*background: url(../img/millau.jpeg) no-repeat center center scroll;*/
 }
 
 .portfolio-item {
