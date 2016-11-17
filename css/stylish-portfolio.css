@@ -37,6 +37,11 @@ p {
 	}
 }
 
+p strong {
+	font-weight: 400;
+	text-decoration: underline;
+}
+
 #bonjour-lettre p {
 	text-align: justify;
 }
