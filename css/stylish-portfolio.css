@@ -113,8 +113,9 @@ h3 {
 	outline: none;
 	margin-top: 40px;
 }
+
 .submenu .nav li {
-	padding: 0 10px 3px 10px;
+	padding: 0 0px 3px 0px;
 	font-size: 1.4em;
 }
 
@@ -160,9 +161,19 @@ h3 {
 .text-center .submenu li {
 	margin: 0;
 	/*padding: 0;*/
-	font-size: 2.5em;
+	font-size: 4vw;
 	font-weight: 700;
 	font-family: 'Gentium Basic', serif;
+}
+
+.text-center .submenu li a {
+	padding: 0px 0px 10px 0px;
+}
+
+@media (min-width: 768px) {
+	.text-center .submenu li {
+		font-size: 2.5em;
+	}
 }
 
 .text-center .submenu li small {
