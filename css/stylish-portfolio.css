@@ -215,11 +215,11 @@ h3 {
 }
 
 .proposal {
-	border: solid 1px #BBB;
-	border-radius: 5px;
-	padding: 0px 10px 0px 10px;
-	margin: 20px 0px 0px 0px;
 	background: #f8f8f8;
+	border: solid 1px #DDD;
+	border-radius: 0px;
+	padding: 0px 10px 0px 10px;
+	margin: 10px;
 }
 
 .proposal-body {
@@ -241,6 +241,75 @@ h3 {
 	padding: 0 10px;
 	position: relative;
 	z-index: 1;
+}
+
+.category {
+	overflow: hidden;
+	margin: 20px 0px 0px 0px;
+}
+.cat-bar {
+	margin: 0px 0px 0px 0px;
+	float: left;
+	width: 23px;
+	margin-bottom: -99999px;
+    padding-bottom: 99999px;
+
+}
+.cat-block {
+	display: block;
+	margin-left: 23px;
+
+}
+.cat-title {
+	writing-mode: sideways-lr;
+	margin: 10px 0px 10px 0px;
+	padding: 0px;
+	color: white;
+	font-size: 1.2em;
+	font-weight: 700;
+	font-family: sans;
+	text-align: right;
+	text-transform: uppercase;
+}
+
+.brd-one {
+	background: rgb( 52, 73, 94 );
+}
+
+.blk-one {
+	border: solid 1px rgb( 52, 73, 94 );
+}
+
+.brd-two {
+	background: rgb( 41, 128, 185 );
+}
+
+.blk-two {
+	border: solid 1px rgb( 41, 128, 185 );
+}
+
+.brd-three {
+	background: rgb( 39, 174, 96 );
+}
+
+.blk-three {
+	border: solid 1px rgb( 39, 174, 96 );
+}
+
+.brd-four {
+	background: rgb( 169, 50, 38 );
+}
+
+.blk-four {
+	border: solid 1px rgb( 169, 50, 38 );
+}
+
+.brd-five {
+	background: rgb( 141, 110, 99 );
+}
+
+.blk-five {
+	border: solid 1px rgb( 141, 110, 99 );
 }
 
 .text-vertical-center {
