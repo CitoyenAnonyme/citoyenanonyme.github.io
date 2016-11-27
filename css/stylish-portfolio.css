@@ -312,6 +312,14 @@ h3 {
 	border-color: rgb( 141, 110, 99 );
 }
 
+.brd-six {
+	background: rgb( 149, 165, 166 );
+}
+
+.blk-six {
+	border-color: rgb( 149, 165, 166 );
+}
+
 .text-vertical-center {
 	display: table-cell;
 	text-align: center;
