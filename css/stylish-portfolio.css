@@ -38,8 +38,7 @@ p {
 }
 
 p strong {
-	font-weight: 400;
-	text-decoration: underline;
+	font-weight: 600;
 }
 
 #bonjour-lettre p {
