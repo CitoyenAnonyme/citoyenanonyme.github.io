@@ -70,6 +70,14 @@ h3 {
 	vertical-align: middle;
 }
 
+h3 span {
+	float: right;
+	font-size: 14px;
+	vertical-align: baseline;
+	line-height: 21px;
+	font-style: italic;
+}
+
 .avatar {
 	background: #fff;
 	border: 5px solid #fff;
