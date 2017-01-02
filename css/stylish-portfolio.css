@@ -268,9 +268,9 @@ h3 span {
 	border: solid 2px black;
 }
 .cat-title {
-	writing-mode: sideways-lr;
-	-webkit-writing-mode: sideways-lr;
-	-ms-writing-mode: bt-lr;
+	writing-mode: vertical-rl;
+	-webkit-writing-mode: vertical-rl;
+	-ms-writing-mode: tb-rl;
 	margin: 10px 0px 10px 0px;
 	padding: 0px;
 	color: white;
