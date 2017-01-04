@@ -15,6 +15,9 @@
 		<!-- Bootstrap Core CSS -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		
+		<!-- Cookie bar CSS -->
+		<link href="css/cookiebar.css" rel="stylesheet">
+
 		<!-- Custom CSS -->
 		<link href="css/stylish-portfolio.css" rel="stylesheet">
 		
@@ -1184,11 +1187,8 @@
 						</h3>
 						<hr class="small">
 						<p class="text-muted">
-							© 2016 Citoyen Anonyme.<br>
+							© 2016-2017 Citoyen Anonyme.<br>
 							Tous droits réservés.
-						</p>
-						<p class="text-muted">
-							Notre utilisation des cookies est anonyme et se limite à l'observation de notre trafic.
 						</p>
 					</div>
 				</div>
@@ -1285,7 +1285,6 @@
 		          $('#myTab a').click(function (e) {
 		              e.preventDefault();
 		              $(this).tab('show');
-		              console.log('hello')
 		          });
 
 		          // store the currently selected tab in the hash value
@@ -1318,5 +1317,9 @@
 		      ga('set', 'anonymizeIp', true);
 		      ga('send', 'pageview');
 		</script>
+
+		<script src="js/mixpanel.min.js"></script>
+		<script src="js/exploration.js"></script>
+		<script src="js/cookiebar.js"></script>
 	</body>
 </html>
