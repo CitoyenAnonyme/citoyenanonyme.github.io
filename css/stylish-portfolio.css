@@ -316,11 +316,11 @@ h3 span {
 }
 
 .brd-four {
-	background: rgb( 169, 50, 38 );
+	background: #16a085;
 }
 
 .blk-four {
-	border-color: rgb( 169, 50, 38 );
+	border-color: #16a085;
 }
 
 .brd-five {
@@ -332,11 +332,19 @@ h3 span {
 }
 
 .brd-six {
-	background: rgb( 149, 165, 166 );
+	background: #7f8c8d;
 }
 
 .blk-six {
-	border-color: rgb( 149, 165, 166 );
+	border-color: #7f8c8d;
+}
+
+.brd-seven {
+	background: rgb( 169, 50, 38 );
+}
+
+.blk-seven {
+	border-color: rgb( 169, 50, 38 );
 }
 
 .text-vertical-center {
