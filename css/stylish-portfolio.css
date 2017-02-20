@@ -188,6 +188,10 @@ h3 span {
 	display: block;
 }
 
+.proposal h2:hover, .proposal h3:hover {
+	text-decoration: underline;
+}
+
 .proposal h1, .proposal h2, .proposal h3 {
 	cursor: pointer;
 }
