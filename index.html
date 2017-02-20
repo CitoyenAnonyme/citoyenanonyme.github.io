@@ -1576,105 +1576,108 @@
 		
 		<!-- Custom Theme JavaScript -->
 		<script>
-		      // Closes the sidebar menu
-		      $("#menu-close").click(function(e) {
-		          e.preventDefault();
-		          $("#sidebar-wrapper").toggleClass("active");
-		      });
-		      
-		      // Opens the sidebar menu
-		      $("#menu-toggle").click(function(e) {
-		          e.preventDefault();
-		          $("#sidebar-wrapper").toggleClass("active");
-		      });
+			// Closes the sidebar menu
+			$("#menu-close").click(function(e) {
+				e.preventDefault();
+				$("#sidebar-wrapper").toggleClass("active");
+			});
 
-		      // Scrolls to the selected menu item on the page
-		      $(function() {
-		          $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
-		              if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-		                  var target = $(this.hash);
-		                  target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-		                  if (target.length) {
-		                      $('html,body').animate({
-		                          scrollTop: target.offset().top
-		                      }, 1000);
-		                      return false;
-		                  }
-		              }
-		          });
-		      });
+			// Opens the sidebar menu
+			$("#menu-toggle").click(function(e) {
+				e.preventDefault();
+				$("#sidebar-wrapper").toggleClass("active");
+			});
 
-		      // button appears after scrolling
-		      var fixed = false;
-		      $(document).scroll(function() {
-		          if ($(this).scrollTop() > 250) {
-		              if (!fixed) {
-		                  fixed = true;
-		                  // $('#to-top').css({position:'fixed', display:'block'});
-		                  $('#to-top').show("slow", function() {
-		                      $('#to-top').css({
-		                          position: 'fixed',
-		                          display: 'block'
-		                      });
-		                  });
-		              }
-		          } else {
-		              if (fixed) {
-		                  fixed = false;
-		                  $('#to-top').hide("slow", function() {
-		                      $('#to-top').css({
-		                          display: 'none'
-		                      });
-		                  });
-		              }
-		          }
-		      });
+			// Scrolls to the selected menu item on the page
+			$(function() {
+				$('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
+					if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+						var target = $(this.hash);
+						target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+						if (target.length) {
+							$('html,body').animate({
+								scrollTop: target.offset().top
+							}, 1000);
+							return false;
+						}
+					}
+				});
+			});
 
-		      // collapsible proposals
-		      $('.proposal h1').click(function() {
-		          /*var $this = $(this);
-		          if(!$this.hasClass('statement-collapsed')) {
-		              $this.parents('.statement').find('.statement-body').slideUp();
-		              $this.addClass('statement-collapsed');
-		              $this.find('i').removeClass('glyphicon-chevron-down').addClass('glyphicon-chevron-left');
-		          } else {
-		              $this.parents('.statement').find('.statement-body').slideDown();
-		              $this.removeClass('statement-collapsed');
-		              $this.find('i').removeClass('glyphicon-chevron-left').addClass('glyphicon-chevron-down');
-		          }*/
-		          $(this).next().collapse('toggle');
-		      });
-		      $('.proposal h2').click(function() {
-		          $(this).next().collapse('toggle');
-		      });
-		      $('.proposal h3').click(function() {
-		          $(this).next().collapse('toggle');
-		      });
+			// button appears after scrolling
+			var fixed = false;
+			$(document).scroll(function() {
+				if ($(this).scrollTop() > 250) {
+					if (!fixed) {
+						fixed = true;
+						// $('#to-top').css({position:'fixed', display:'block'});
+						$('#to-top').show("slow", function() {
+							$('#to-top').css({
+								position: 'fixed',
+								display: 'block'
+							});
+						});
+					}
+				} else {
+					if (fixed) {
+						fixed = false;
+						$('#to-top').hide("slow", function() {
+							$('#to-top').css({
+								display: 'none'
+							});
+						});
+					}
+				}
+			});
 
-		      $(document).ready (function() {
+			// collapsible proposals
+			$('.proposal h1').click(function() {
+				/*var $this = $(this);
+				if(!$this.hasClass('statement-collapsed')) {
+					$this.parents('.statement').find('.statement-body').slideUp();
+					$this.addClass('statement-collapsed');
+					$this.find('i').removeClass('glyphicon-chevron-down').addClass('glyphicon-chevron-left');
+				} else {
+					$this.parents('.statement').find('.statement-body').slideDown();
+					$this.removeClass('statement-collapsed');
+					$this.find('i').removeClass('glyphicon-chevron-left').addClass('glyphicon-chevron-down');
+				}*/
+				$(this).next().collapse('toggle');
+			});
+			$('.proposal h2').click(function() {
+				$(this).next().collapse('toggle');
+			});
+			$('.proposal h3').click(function() {
+				$(this).next().collapse('toggle');
+			});
 
-		          $('#myTab a').click(function (e) {
-		              e.preventDefault();
-		              $(this).tab('show');
-		          });
+			$(document).ready (function() {
 
-		          // store the currently selected tab in the hash value
-		          $(".submenu ul.nav > li > a").on("shown.bs.tab", function (e) {
-		              var id = $(e.target).attr("href");
-		              //window.location.hash = id;
-		              if(history.pushState) {
-		                  history.pushState(null, null, id);
-		              }
-		              else {
-		                  location.hash = id;
-		              }
-		          });
+				$('#myTab a').click(function (e) {
+					e.preventDefault();
+					$(this).tab('show');
+				});
 
-		          // on load of the page: switch to the currently selected tab
-		          var hash = window.location.hash;
-		          $('#myTab a[href="' + hash + '"]').tab('show');
+				// store the currently selected tab in the hash value
+				$(".submenu ul.nav > li > a").on("shown.bs.tab", function (e) {
+					var id = $(e.target).attr("href");
+					//window.location.hash = id;
+					if(history.pushState) {
+						history.pushState(null, null, id);
+					}
+					else {
+						location.hash = id;
+					}
+				});
 
-		      });
+				// on load of the page: switch to the currently selected tab
+				var hash = window.location.hash;
+				$('#myTab a[href="' + hash + '"]').tab('show');
+
+				if (hash) {
+					$('html,body').animate({ scrollTop: $('#candidature').offset().top }, 500, 'swing');
+				}
+			});
 		</script> 
 		<script>
 		      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
