@@ -49,6 +49,10 @@ h3 {
 	font-size: 21px; /*24px;*/
 }
 
+.helpread {
+	color: darkred;
+}
+
 .header .list-inline {
 	margin: 20px 0;
 }
