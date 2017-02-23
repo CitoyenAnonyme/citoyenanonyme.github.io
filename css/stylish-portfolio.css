@@ -216,10 +216,18 @@ h3 span {
 }
 
 .proposal h3 small {
-	font-size: 0.5em;
+	font-size: 0.55em;
+	font-family: sans-serif;
 	margin-left: 10px;
 	margin-right: 10px;
-	vertical-align: 25%;
+}
+
+.proposal h2 small {
+	font-size: 0.5em;
+	font-family: sans-serif;
+	margin-right: 10px;
+	color: black;
+	vertical-align: middle;
 }
 
 .proposal h2 {
